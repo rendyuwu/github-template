@@ -33,13 +33,13 @@ Give the assistant this repo URL and ask it to set up your project:
 **New repository:**
 ```
 Set up contributing guidelines and GitHub templates for my project
-using this template: https://github.com/simondayce/github-contribute-template
+using this template: https://github.com/rendyuwu/github-template
 ```
 
 **Existing repository:**
 ```
 Set up contributing guidelines and GitHub templates for this repo
-based on: https://github.com/simondayce/github-contribute-template
+based on: https://github.com/rendyuwu/github-template
 ```
 
 For existing repos, the AI assistant will explore your codebase first — detect languages, frameworks, linters, test tools, build commands — then generate files that match your actual project setup. It only asks for things it can't derive from code (email, license).
