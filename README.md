@@ -28,21 +28,28 @@ Works for both **new repositories** and **existing projects** — the AI assista
 
 ### With an AI Coding Assistant
 
-Give the assistant this repo URL and ask it to set up your project:
+Give the assistant this repo URL and ask it to set up your project. The key step is having the AI read the `CLAUDE.md` file from this template repo — it contains the full workflow instructions for detecting your project's tech stack, asking the right questions, and generating customized files.
 
 **New repository:**
 ```
-Set up contributing guidelines and GitHub templates for my project
-using this template: https://github.com/rendyuwu/github-template
+Read the CLAUDE.md file from https://github.com/rendyuwu/github-template
+and follow its instructions to set up contributing guidelines and
+GitHub templates for my project.
 ```
 
 **Existing repository:**
 ```
-Set up contributing guidelines and GitHub templates for this repo
-based on: https://github.com/rendyuwu/github-template
+Read the CLAUDE.md file from https://github.com/rendyuwu/github-template
+and follow its instructions to set up contributing guidelines and
+GitHub templates for this repo.
 ```
 
-For existing repos, the AI assistant will explore your codebase first — detect languages, frameworks, linters, test tools, build commands — then generate files that match your actual project setup. It only asks for things it can't derive from code (email, license).
+The `CLAUDE.md` file tells the AI assistant to:
+1. **Detect your project** — explore your codebase to find languages, frameworks, linters, test tools, and build commands
+2. **Ask only what's needed** — contact email, license preference, and anything it can't derive from code
+3. **Generate customized files** — replace all `[TODO: ...]` placeholders with real values based on your project
+
+For existing repos, the AI assistant will generate files that match your actual project setup rather than using generic defaults.
 
 ### Manual Setup
 
