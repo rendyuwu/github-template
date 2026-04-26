@@ -1,0 +1,66 @@
+# [TODO: PROJECT_NAME] CI
+#
+# This is a placeholder workflow. Replace the steps below with your project's
+# actual lint, test, and build commands.
+#
+# Common patterns by tech stack:
+#
+#   Node.js:     npm ci → npm run lint → npm run typecheck → npm run test → npm run build
+#   Python (uv): uv sync → uv run ruff check → uv run pytest -q
+#   Go:          go mod download → golangci-lint run → go test ./... → go build ./...
+#   Rust:        cargo fmt --check → cargo clippy → cargo test → cargo build --release
+#
+# Add service containers if your tests need a database:
+#
+#   services:
+#     postgres:
+#       image: postgres:16
+#       env:
+#         POSTGRES_USER: test
+#         POSTGRES_PASSWORD: test
+#         POSTGRES_DB: test_db
+#       ports:
+#         - 5432:5432
+#       options: >-
+#         --health-cmd pg_isready
+#         --health-interval 10s
+#         --health-timeout 5s
+#         --health-retries 5
+
+name: CI
+
+on:
+  push:
+    branches: ["[TODO: DEFAULT_BRANCH]"]
+  pull_request:
+    branches: ["[TODO: DEFAULT_BRANCH]"]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # [TODO: Set up your runtime]
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: "20"
+      #     cache: "npm"
+
+      # [TODO: Install dependencies]
+      # - run: npm ci
+
+      # [TODO: Lint]
+      # - run: npm run lint
+
+      # [TODO: Type check (if applicable)]
+      # - run: npm run typecheck
+
+      # [TODO: Test]
+      # - run: npm run test
+
+      # [TODO: Build (if applicable)]
+      # - run: npm run build
+
+      - run: echo "Replace this with your actual CI steps"
